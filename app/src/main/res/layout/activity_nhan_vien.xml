@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_anh_dai_dien"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@color/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Họ Tên" />
+
+    <TextView
+        android:id="@+id/tv_ho_ten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_ten" />
+    <TextView
+        android:id="@+id/tv_ma_nv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_ho_ten"
+        android:text="Mã Nhân Viên"/>
+    <TextView
+        android:id="@+id/tv_ma_nhan_vien"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_ma_nv" />
+
+    <TextView
+        android:id="@+id/t_chuc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_ma_nhan_vien"
+        android:text="Chức Vụ"/>
+    <TextView
+        android:id="@+id/tv_chuc_vu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/t_chuc" />
+    <TextView
+        android:id="@+id/tv_sdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_chuc_vu"
+        android:text="Số Điện Thoại"/>
+    <TextView
+        android:id="@+id/tv_so_dien_thoai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_sdt" />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_so_dien_thoai"
+        android:text="Email"/>
+    <TextView
+        android:id="@+id/tv_email_canhan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <Button
+        android:id="@+id/btn_lien_he"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_anh_dai_dien"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_canhan"
+        android:text="Liên hệ" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
